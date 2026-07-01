@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMF Digital Skills Curriculum Blueprint & Operational Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js for Beautiful visual data displays -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Modular Stylesheet Links -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="antialiased min-h-screen">
+
+<!-- Top Floating Warning Header (Mandatory Hardware & Connectivity Notice) -->
+<div class="bg-amber-500 text-stone-950 font-semibold px-4 py-2.5 text-xs md:text-sm text-center sticky top-0 z-50 shadow-md flex items-center justify-center gap-2">
+    <span class="text-base">⚠️</span>
+    <span>
+            <strong>MANDATORY ENTRY REQUIREMENT:</strong> A personal <strong>Laptop</strong> & reliable, active <strong>Internet Connection (Data-Required)</strong> are strictly required to access our cloud learning environments.
+        </span>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="bg-white/90 backdrop-blur-md border-b border-emerald-100 sticky top-[38px] z-40 transition-all duration-300 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+            <!-- Branding -->
+            <div class="flex items-center gap-3">
+                <div class="w-11 h-11 bg-[#064E3B] rounded-xl flex items-center justify-center text-emerald-400 font-extrabold text-2xl shadow-md border border-emerald-500">
+                    P
+                </div>
+                <div>
+                    <span class="block text-[#064E3B] font-extrabold text-base md:text-lg leading-none uppercase tracking-tight font-sans">Phucuka Mzansi</span>
+                    <span class="block text-emerald-500 font-bold text-[10px] uppercase tracking-widest mt-0.5">Digital Blueprint Hub</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="#overview" class="text-sm font-semibold text-stone-600 hover:text-emerald-600 transition-colors">Overview</a>
+                <a href="#timeline" class="text-sm font-semibold text-stone-600 hover:text-emerald-600 transition-colors">Operational Roadmap</a>
+                <a href="#curriculum" class="text-sm font-semibold text-stone-600 hover:text-emerald-600 transition-colors">16-Week Curriculum</a>
+                <a href="#fnb" class="text-sm font-semibold text-stone-600 hover:text-emerald-600 transition-colors">FNB Lecture Academy</a>
+                <a href="#facilitators" class="text-sm font-semibold text-stone-600 hover:text-emerald-600 transition-colors">Mentor Rhythm</a>
+            </div>
+
+            <!-- Live WhatsApp Help Button -->
+            <div class="flex items-center">
+                <a href="https://wa.me/27714145918" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-full text-xs md:text-sm font-bold transition-all flex items-center gap-2 shadow-md">
+                    <span class="text-base">💬</span> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Header -->
+<header class="relative gradient-bg overflow-hidden py-16 md:py-24 text-white">
+    <!-- Background Radial Orbs -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-emerald-500/15 rounded-full blur-3xl -mr-32 -mt-32"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-emerald-400/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+            <!-- Main Copy Area -->
+            <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
+                        ⚡ Official 2026 Core Execution Blueprint
+                    </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-none text-white">
+                    Cultivating Native <br>
+                    <span class="text-emerald-400">Computer Literacy</span> & Logic
+                </h1>
+                <p class="text-emerald-100/90 text-sm md:text-base leading-relaxed max-w-xl">
+                    A structured 4-Month (16-Week) Web Development Training Programme built entirely around vanilla configurations: <strong>HTML5, CSS3, and Pure JS</strong>. Fully aligned with the official documents <span class="underline text-emerald-300">Phucuka_Mzansi_Curriculum_Blueprint.pdf</span>, <span class="underline text-emerald-300">Software Development .pdf</span>, and <span class="underline text-emerald-300">pmf tech project.pdf</span>.
+                </p>
+
+                <!-- Quick Stats Layout -->
+                <div class="grid grid-cols-3 gap-4 pt-4">
+                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                        <span class="block text-2xl md:text-3xl font-extrabold text-emerald-400">100%</span>
+                        <span class="block text-xs text-emerald-200/80">Online & Cloud-First</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                        <span class="block text-2xl md:text-3xl font-extrabold text-emerald-400">16 Weeks</span>
+                        <span class="block text-xs text-emerald-200/80">Guided Learning</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-3 rounded-xl">
+                        <span class="block text-2xl md:text-3xl font-extrabold text-emerald-400">3 Mentors</span>
+                        <span class="block text-xs text-emerald-200/80">Support Rotation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hardware Requirement Cards with visual pulses -->
+            <div id="overview" class="lg:col-span-5">
+                <div class="bg-white text-stone-900 rounded-3xl p-6 md:p-8 shadow-2xl border border-emerald-100 relative pulse-warning">
+                    <div class="absolute top-4 right-4 bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">
+                        Required
+                    </div>
+                    <h3 class="text-lg md:text-xl font-black text-[#064E3B] mb-4 flex items-center gap-2">
+                        <span>💻</span> Hardware Prerequisites
+                    </h3>
+                    <p class="text-xs text-stone-500 leading-relaxed mb-6">
+                        This bootcamp leverages cloud-based code execution sandboxes to remove local software configurations, allowing students to build right in their browser.
+                    </p>
+
+                    <div class="space-y-4">
+                        <!-- Laptop Requirement -->
+                        <div class="flex items-start gap-3.5 p-3 rounded-2xl bg-emerald-50/50 border border-emerald-100/60">
+                            <span class="text-2xl mt-0.5">🖥️</span>
+                            <div>
+                                <h4 class="font-bold text-sm text-[#064E3B]">Personal Laptop</h4>
+                                <p class="text-xs text-stone-600">Capable of running modern web browsers (Chrome/Firefox) smoothly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Internet Requirement -->
+                        <div class="flex items-start gap-3.5 p-3 rounded-2xl bg-emerald-50/50 border border-emerald-100/60">
+                            <span class="text-2xl mt-0.5">📡</span>
+                            <div>
+                                <h4 class="font-bold text-sm text-[#064E3B]">Reliable Internet Connection</h4>
+                                <p class="text-xs text-stone-600">Active data connection is required for online platforms and virtual classroom streaming.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-5 border-t border-stone-100 flex items-center justify-between text-xs">
+                        <span class="text-stone-500">Core References:</span>
+                        <span class="font-bold text-emerald-700">pmf tech project.pdf</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Interactive Progress Tracker -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-20">
+    <div class="bg-white rounded-2xl shadow-xl p-6 border border-emerald-100/60 grid md:grid-cols-12 gap-6 items-center">
+        <div class="md:col-span-4">
+            <h4 class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Interactive Learning Journey</h4>
+            <h3 class="text-lg font-black text-stone-800 mt-1">Syllabus Completion Index</h3>
+            <p class="text-xs text-stone-500 mt-1">Checkoff completed weeks below to track progress across the Phucuka Mzansi blueprint.</p>
+        </div>
+
+        <div class="md:col-span-5">
+            <div class="w-full bg-emerald-50 rounded-full h-4 overflow-hidden border border-emerald-100 p-0.5">
+                <div id="progress-bar" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+            <div class="flex justify-between items-center mt-2">
+                <span class="text-xs text-stone-500 font-bold" id="progress-text">0 / 16 Weeks Completed</span>
+                <span class="text-xs font-black text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded" id="progress-percentage">0% Done</span>
+            </div>
+        </div>
+
+        <div class="md:col-span-3 flex justify-end">
+            <button id="btn-reset-metrics" class="text-xs text-stone-500 hover:text-red-600 transition-colors flex items-center gap-1">
+                <span>🔄</span> Reset Progress Metrics
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Operational Phases Roadmap -->
+<section id="timeline" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl font-black text-[#064E3B] tracking-tight">Bootcamp Operational Phases</h2>
+        <p class="text-stone-500 mt-2 text-sm">Follow the key administrative and developmental target months scheduled for 2026 as outlined in <span class="font-semibold text-[#064E3B]">pmf tech project.pdf</span>.</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+        <!-- Phase 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-100 hover:border-emerald-200 transition-all hover:shadow-lg relative">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">
+                P1
+            </div>
+            <h3 class="font-extrabold text-stone-800 text-sm uppercase">Recruitment & Setup</h3>
+            <span class="block text-xs font-bold text-emerald-600 mt-1">July 2026</span>
+            <p class="text-xs text-stone-500 mt-3 leading-relaxed">
+                Outreach drives, candidate screenings, and technical GitHub Classroom configurations. Managed by Mlungisi & Vercus.
+            </p>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-100 hover:border-emerald-200 transition-all hover:shadow-lg">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">
+                P2
+            </div>
+            <h3 class="font-extrabold text-stone-800 text-sm uppercase">Onboarding & HTML</h3>
+            <span class="block text-xs font-bold text-emerald-600 mt-1">August 2026</span>
+            <p class="text-xs text-stone-500 mt-3 leading-relaxed">
+                Kickoff masterclasses, structural markup controls, semantic input fields, and Month 1 survey form project evaluation.
+            </p>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-100 hover:border-emerald-200 transition-all hover:shadow-lg">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">
+                P3
+            </div>
+            <h3 class="font-extrabold text-stone-800 text-sm uppercase">Styling & JS Engine</h3>
+            <span class="block text-xs font-bold text-emerald-600 mt-1">Sept - Oct 2026</span>
+            <p class="text-xs text-stone-500 mt-3 leading-relaxed">
+                Responsive media queries, layouts, memory variables, logic statements, loops, functions, and active browser DOM operations.
+            </p>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-100 hover:border-emerald-200 transition-all hover:shadow-lg">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">
+                P4
+            </div>
+            <h3 class="font-extrabold text-stone-800 text-sm uppercase">Polish, Cloud & Grad</h3>
+            <span class="block text-xs font-bold text-emerald-600 mt-1">November 2026</span>
+            <p class="text-xs text-stone-500 mt-3 leading-relaxed">
+                GitHub Pages cloud deployments, user experience polish, student portfolio walk-throughs, and certificate distribution.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 16-Week Interactive Curriculum Navigator -->
+<section id="curriculum" class="py-16 bg-emerald-950 text-white relative">
+    <div class="absolute inset-0 bg-stone-900/40 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+            <div>
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest">Comprehensive breakdown</span>
+                <h2 class="text-3xl font-black text-white tracking-tight mt-1">16-Week Curriculum Syllabus</h2>
+                <p class="text-emerald-100/70 text-xs md:text-sm mt-2 max-w-2xl">
+                    Explore core web technologies sequentially. Each week contains interactive direct links to the relevant sandboxes and learning documentation in line with <span class="text-emerald-300 underline">Phucuka_Mzansi_Curriculum_Blueprint.pdf</span> and <span class="text-emerald-300 underline">Software Development .pdf</span>.
+                </p>
+            </div>
+
+            <!-- Month Selection Buttons -->
+            <div class="flex flex-wrap gap-2 bg-white/5 border border-white/10 p-1.5 rounded-2xl w-full md:w-auto overflow-x-auto custom-scrollbar" id="month-tabs-container">
+                <button data-month="1" id="month-btn-1" class="month-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap tab-active">
+                    Month 1: HTML
+                </button>
+                <button data-month="2" id="month-btn-2" class="month-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">
+                    Month 2: CSS & Git
+                </button>
+                <button data-month="3" id="month-btn-3" class="month-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">
+                    Month 3: JS Logic
+                </button>
+                <button data-month="4" id="month-btn-4" class="month-tab px-5 py-2.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap">
+                    Month 4: UX & Publish
+                </button>
+            </div>
+        </div>
+
+        <!-- Curriculum Display Cards -->
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+            <!-- Dynamic Content Display Panel -->
+            <div class="lg:col-span-8">
+                <div id="syllabus-content-area" class="space-y-6">
+                    <!-- Content will load dynamically from JavaScript dataset -->
+                </div>
+            </div>
+
+            <!-- Grading Weighting Widget WITH Incorporated Calculator Anchor -->
+            <div class="lg:col-span-4 bg-white/5 border border-white/10 rounded-3xl p-6 md:p-8 backdrop-blur-md">
+                <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                    <span>📊</span> Grading Matrix Weight
+                </h3>
+                <p class="text-xs text-emerald-100/70 mb-6 leading-relaxed">
+                    Evaluations prioritize real-world portfolio assembly and actual live code execution directly visible on the open web.
+                </p>
+                <div class="relative h-[220px] mb-6 flex justify-center">
+                    <canvas id="assessmentDoughnutChart"></canvas>
+                </div>
+
+                <!-- Dynamic Interactive Calculator Mount Target Hook -->
+                <div id="grading-calculator-container"></div>
+
+                <div class="space-y-3 pt-4 border-t border-white/10 text-xs mt-4">
+                    <div class="flex justify-between items-center text-emerald-300">
+                        <span>HTML Structure Project (Week 4)</span>
+                        <span class="font-bold">20%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-[#D2B48C]">
+                        <span>Responsive CSS Project (Week 8)</span>
+                        <span class="font-bold">20%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-amber-400">
+                        <span>Interactive JS Logic App (Week 12)</span>
+                        <span class="font-bold">20%</span>
+                    </div>
+                    <div class="flex justify-between items-center text-white">
+                        <span>Final Capstone Portfolio (Week 16)</span>
+                        <span class="font-bold">40%</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FNB App Academy Integration Hub with Videos & Links -->
+<section id="fnb" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gradient-to-br from-[#064E3B]/10 to-transparent rounded-[2.5rem] p-8 md:p-12 border border-emerald-100">
+        <div class="max-w-3xl mb-10">
+                <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest flex items-center gap-1.5">
+                    🏢 Industry Synergy Pathway
+                </span>
+            <h2 class="text-3xl font-black text-[#064E3B] tracking-tight mt-1">FNB App Academy Video Library</h2>
+            <p class="text-stone-600 text-sm mt-2 leading-relaxed">
+                Each week below has its own distinct lecture covering application strategies, database architectures, APIs integration, and monetization systems as referenced in <span class="text-emerald-700 underline">pmf tech project.pdf</span>.
+            </p>
+        </div>
+
+        <!-- Quick Portals Grid -->
+        <div class="grid sm:grid-cols-3 gap-4 mb-10">
+            <a href="https://fnb.co.za" target="_blank" rel="noopener noreferrer" class="bg-white p-4 rounded-2xl border border-emerald-100/60 shadow-sm flex items-center justify-between hover:border-emerald-500 transition-all group">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🌐</span>
+                    <div>
+                        <span class="block text-xs font-bold text-stone-700">Official Portal</span>
+                        <span class="text-[10px] text-emerald-600">fnb.co.za</span>
+                    </div>
+                </div>
+                <span class="text-stone-400 group-hover:text-emerald-600 transition-colors">➔</span>
+            </a>
+
+            <a href="https://www.itvarsity.org" target="_blank" rel="noopener noreferrer" class="bg-white p-4 rounded-2xl border border-emerald-100/60 shadow-sm flex items-center justify-between hover:border-emerald-500 transition-all group">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🎓</span>
+                    <div>
+                        <span class="block text-xs font-bold text-stone-700">IT Varsity Hub</span>
+                        <span class="text-[10px] text-emerald-600">itvarsity.org</span>
+                    </div>
+                </div>
+                <span class="text-stone-400 group-hover:text-emerald-600 transition-colors">➔</span>
+            </a>
+
+            <a href="https://www.mtnbusiness.co.za" target="_blank" rel="noopener noreferrer" class="bg-white p-4 rounded-2xl border border-emerald-100/60 shadow-sm flex items-center justify-between hover:border-emerald-500 transition-all group">
+                <div class="flex items-center gap-3">
+                    <span class="text-2xl">🔑</span>
+                    <div>
+                        <span class="block text-xs font-bold text-stone-700">MTN App of the Year</span>
+                        <span class="text-[10px] text-emerald-600">Register Profile</span>
+                    </div>
+                </div>
+                <span class="text-stone-400 group-hover:text-emerald-600 transition-colors">➔</span>
+            </a>
+        </div>
+
+        <!-- Interactive Levels / Tracks Selector -->
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+            <!-- Track Tab List -->
+            <div class="lg:col-span-4 space-y-3" id="fnb-tabs-container">
+                <h3 class="text-xs font-bold text-stone-400 uppercase tracking-widest mb-2">FNB Academy Tracks</h3>
+
+                <button data-track="1" id="fnb-track-btn-1" class="fnb-tab w-full text-left p-4 rounded-2xl bg-white border border-emerald-100 hover:border-emerald-400 transition-all text-stone-800 font-bold text-sm flex items-center justify-between shadow-sm tab-active">
+                    <span>Beginner Track</span>
+                    <span class="text-xs font-normal">Weeks 1-3</span>
+                </button>
+
+                <button data-track="2" id="fnb-track-btn-2" class="fnb-tab w-full text-left p-4 rounded-2xl bg-white border border-emerald-100 hover:border-emerald-400 transition-all text-stone-800 font-bold text-sm flex items-center justify-between shadow-sm">
+                    <span>Intermediate Track</span>
+                    <span class="text-xs font-normal">Weeks 4-6</span>
+                </button>
+
+                <button data-track="3" id="fnb-track-btn-3" class="fnb-tab w-full text-left p-4 rounded-2xl bg-white border border-emerald-100 hover:border-emerald-400 transition-all text-stone-800 font-bold text-sm flex items-center justify-between shadow-sm">
+                    <span>Advanced Track</span>
+                    <span class="text-xs font-normal">Weeks 7-9</span>
+                </button>
+            </div>
+
+            <!-- Track Content details & Videos -->
+            <div class="lg:col-span-8">
+                <div id="fnb-track-details" class="bg-white rounded-3xl p-6 md:p-8 border border-emerald-100 shadow-sm">
+                    <!-- Switchable FNB modules will populate here -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Video Player Modal Overlay -->
+<div id="videoModal" class="fixed inset-0 bg-stone-950/85 backdrop-blur-md hidden items-center justify-center z-50 p-4">
+    <div class="bg-stone-900 rounded-2xl overflow-hidden w-full max-w-3xl border border-stone-800 relative shadow-2xl">
+        <button id="close-modal-btn" class="absolute top-4 right-4 bg-stone-800 hover:bg-stone-700 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl z-10 transition-colors">
+            ✕
+        </button>
+        <div class="aspect-video relative bg-black">
+            <iframe id="modalIframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="p-5 bg-stone-950 text-white flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+                <span id="modalVideoTitle" class="font-bold text-sm block">Educational Lecture Module</span>
+                <span class="text-xs text-[#10B981] font-bold uppercase tracking-wider">FNB App Academy Pathway</span>
+            </div>
+            <div class="flex gap-2">
+                <a id="modalDirectLink" href="#" target="_blank" rel="noopener noreferrer" class="bg-red-600 hover:bg-red-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition-all flex items-center gap-1">
+                    <span>📺</span> Open directly in YouTube
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mentorship, Support & Weekly Rhythm -->
+<section id="facilitators" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Side Schedule -->
+        <div class="space-y-6">
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Coordinated Execution</span>
+            <h2 class="text-3xl font-black text-[#064E3B] tracking-tight">Facilitator Support Matrix</h2>
+            <p class="text-stone-600 text-sm leading-relaxed">
+                The instruction team balances structured conceptual walkthroughs with continuous asynchronous support channels to keep student velocity high.
+            </p>
+
+            <!-- Daily Schedule Pathway -->
+            <div class="space-y-4">
+                <div class="flex gap-4 p-4 rounded-2xl bg-white border border-stone-100 hover:border-emerald-100 transition-all">
+                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-700 font-black flex items-center justify-center text-xs shrink-0">MON</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-stone-800">Live Video Masterclass</h4>
+                        <p class="text-xs text-stone-500 mt-1">A 45-60 minute conceptual presentation covering key layouts and basic logic loops. Screen-share code execution.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 p-4 rounded-2xl bg-white border border-stone-100 hover:border-emerald-100 transition-all">
+                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-700 font-black flex items-center justify-center text-xs shrink-0">T-T</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-stone-800">Asynchronous Support Channels</h4>
+                        <p class="text-xs text-stone-500 mt-1">Designated office hours on Discord/WhatsApp to check code snippets, address sandbox errors, and resolve hurdles.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 p-4 rounded-2xl bg-white border border-stone-100 hover:border-emerald-100 transition-all">
+                    <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-700 font-black flex items-center justify-center text-xs shrink-0">FRI</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-stone-800">Live Classroom Walkthroughs</h4>
+                        <p class="text-xs text-stone-500 mt-1">End-of-week video conference. Students present practical solutions, discuss logic patterns, and verify portfolio outputs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Operational Team Members -->
+        <div class="bg-[#064E3B] text-white rounded-[2rem] p-8 relative overflow-hidden shadow-xl">
+            <div class="absolute top-0 right-0 w-48 h-48 bg-emerald-400/10 rounded-full blur-2xl -mr-12 -mt-12"></div>
+            <h3 class="text-xl font-bold mb-6">Staff Responsibilities Split</h3>
+
+            <div class="space-y-6">
+                <div class="flex items-start gap-3 pb-5 border-b border-emerald-800">
+                    <span class="text-2xl mt-0.5">🧠</span>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">Vercus</h4>
+                        <p class="text-xs text-emerald-200">Technical Environment Configuration & Interactive Sandbox Management</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 pb-5 border-b border-emerald-800">
+                    <span class="text-2xl mt-0.5">🎨</span>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">Zwelly</h4>
+                        <p class="text-xs text-emerald-200">Curriculum Alignment & Frontend Layout Presentation Reviews</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                    <span class="text-2xl mt-0.5">📣</span>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">Mlungisi</h4>
+                        <p class="text-xs text-emerald-200">Community Outreach, Operational Enrollments & Project Coordination</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 p-4 bg-emerald-950 rounded-2xl border border-emerald-800 text-xs italic text-emerald-300">
+                "Weekly syllabus metrics, code reviews, and technical assessments are jointly verified during Saturday sync meetings."
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-stone-900 text-stone-400 pt-16 pb-8 border-t border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-12 gap-12 mb-12">
+
+        <div class="md:col-span-4 space-y-4">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-extrabold text-xl font-sans">P</div>
+                <span class="text-white font-bold text-base tracking-tight font-sans">PMF FOUNDATION</span>
+            </div>
+            <p class="text-xs leading-relaxed">
+                Enabling high-impact digital skills and programming capabilities entirely online for South African youth.
+            </p>
+            <div class="text-xs">
+                <span class="block font-bold text-white uppercase tracking-wider text-[10px] mb-1">Ecosystem References:</span>
+                <ul class="space-y-1 text-emerald-500 font-mono">
+                    <li>• Phucuka_Mzansi_Curriculum_Blueprint.pdf</li>
+                    <li>• Software Development .pdf</li>
+                    <li>• pmf tech project.pdf</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="md:col-span-4 space-y-4 text-xs">
+            <h4 class="text-white font-bold uppercase tracking-widest text-[10px]">Student Code of Conduct</h4>
+            <p class="leading-relaxed">
+                Respect, professional discipline, prompt attendance, structured timeline commitments, and responsible application of software components are mandatory for cohort eligibility.
+            </p>
+            <p class="leading-relaxed text-stone-500 italic">
+                All code execution occurs online. Keep your profile files synchronized and secure.
+            </p>
+        </div>
+
+        <div class="md:col-span-4 space-y-4 text-xs">
+            <h4 class="text-white font-bold uppercase tracking-widest text-[10px]">Contact Phucuka Mzansi</h4>
+            <ul class="space-y-3">
+                <li class="flex items-center gap-2">
+                    <span class="text-lg">📧</span>
+                    <a href="mailto:info@phucukamzansifoundation.org.za" class="hover:underline hover:text-white transition-colors">info@phucukamzansifoundation.org.za</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="text-lg">📞</span>
+                    <a href="tel:+27714145918" class="hover:underline hover:text-white transition-colors">+27 71 414 5918</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="text-lg">💬</span>
+                    <a href="https://wa.me/27714145918" target="_blank" rel="noopener noreferrer" class="text-emerald-500 font-bold hover:underline">Direct WhatsApp Hub</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-stone-800 pt-8 text-center text-[10px] text-stone-600">
+        &copy; 2026 Phucuka Mzansi Foundation. South Africa. All educational assets provided directly for developmental program implementations.
+    </div>
+</footer>
+
+<!-- Bootstrapping engine script routing -->
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
